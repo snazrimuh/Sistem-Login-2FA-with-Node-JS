@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2FA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <style>
+      .container {
+        width: 60rem;
+      }
+      .btn-container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow my-auto">
+            <div class="card-body">
+              <h4 class="card-title text-center">Activate 2 Factor Authentication</h4>
+              <form action="/activate-2fa" method="POST">
+                <div class="text-center mb-5 mt-5">
+                  <img src="2fa.png" alt="Security Image" width="300" height="200" />
+                </div>
+                <div class="btn-container">
+                  <button type="submit" class="btn btn-primary">Activate</button>
+                  <button type="button" class="btn btn-secondary" onclick="window.location.href='/home';">Skip</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
